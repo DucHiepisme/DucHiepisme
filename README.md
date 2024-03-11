@@ -22,6 +22,7 @@
 * Assisted in literature review, data collection, and data preprocessing.
 * Contributed to the development and evaluation of machine learning models for Legal Texture Entailment.
 * Collaborated with senior researchers to analyze and interpret research findings.
+
 **Language**
   - English : B2
 
