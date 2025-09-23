@@ -1,29 +1,69 @@
-### Hi there 👋
+# Trinh Duc Hiep
 
-# Computer Science Student
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/duchiepisme/)  
+Email: [duchiep1702forwork@gmail.com](mailto:duchiep1702forwork@gmail.com)  
+Mobile: [+84-886-222-003](tel:+84886222003)
 
-#### Technical Skills: Python, C++
+## Education
 
-## Education	 			        		
-- B.S., Computer  | VNU University of Engineering and Technology (_2025(expected)_)
+- **VNU University of Engineering and Technology**, Hanoi  
+  Bachelor of Science in Computer Science (Honors program); GPA: 3.5  
+  Sep. 2021 - Jul. 2025
 
-## Skill
-**Computer Science(_June 2021 - Present_)**
-- Testing: Proficient in software testing methodologies, including test planning, test case design, and test execution. Familiarity with both manual and automated testing approaches.
-- Data Structures and Algorithms (DSA): Strong understanding of fundamental data structures and algorithms, including arrays, linked lists, stacks, queues, trees, graphs, sorting, and searching algorithms.
-- Programming: Proficient in Python programming language, with experience in developing efficient and clean code. Familiarity with object-oriented programming (OOP) concepts and design patterns.
-- Machine Learning: Sound knowledge of machine learning principles and techniques, including supervised and unsupervised learning, feature engineering, model evaluation, and optimization. Experience with popular machine learning libraries such as scikit-learn and TensorFlow.
-- Natural Language Processing (NLP): Competent in NLP concepts and techniques, including text preprocessing, tokenization, part-of-speech tagging, named entity recognition, sentiment analysis, and text classification.
-- Legal Textual Entailment: Achieved a top 5 placement in the VLSP competition, demonstrating proficiency in understanding and analyzing legal texts, specifically in the context of textual entailment.
+- **Thai Binh Gifted High School**, Thai Binh  
+  Specialized in Mathematics  
+  Sep. 2018 - July. 2021
 
-**Research Experience(_July 2023 - December _)**
-- Legal Texture Entailment, Contributor :
-* Engaged in a research project focused on Legal Texture Entailment, exploring Natural Language Processing (NLP) and Legal Informatics.
-* Assisted in literature review, data collection, and data preprocessing.
-* Contributed to the development and evaluation of machine learning models for Legal Texture Entailment.
-* Collaborated with senior researchers to analyze and interpret research findings.
+## Research Experiences
 
-**Language**
-  - English : B2
+- **Legal Texture Entailment**, Hanoi  
+  Researcher  
+  July 2023 - December 2023  
+  - Researched Legal Texture Entailment using NLP, Legal Informatics to model complex legal texts for semantic entailment.  
+  - Developed and fine-tuned transformer-based ML models, improving entailment prediction accuracy by 15% over baselines.  
+  - Collaborated with senior researchers to analyze results, interpret metrics, and co-author a technical report with future research proposals.
 
+- **Enhancing Video Summarization Techniques with Advanced Language Models**, Hanoi  
+  Researcher  
+  December 2023 - March 2025  
+  - Built and maintained a sports database for top five European football leagues, enabling detailed analysis of match results and player stats.  
+  - Designed a workflow for automated video summarization using BERT and GPT models to generate concise football match summaries.  
+  - Enhanced video summarization with computer vision and NLP algorithms, improving accuracy by 20%.  
+  - Tested and validated summarization algorithms with quantitative metrics to ensure high-quality outputs.
 
+- **A Multimodal Method for Identifying Foul Situations in Football Matches**, Hanoi  
+  Researcher  
+  March 2025 - July 2025  
+  - Spearheaded the development of a multimodal foul detection framework, combining computer vision and temporal data processing to accurately identify foul situations in football matches with high precision.  
+  - Designed and implemented a novel data augmentation technique to address class imbalance in foul detection datasets.  
+  - Achieved a notable improvement in foul detection accuracy, boosting model performance by 2% through the integration of multimodal feature fusion and fine-tuning of deep learning models.
+
+## Achievements
+
+- **Top 5 of Vietnamese Language and Speech Processing**  
+  Issued by Vietnam Institute for Advanced Study in Mathematics (VIASM)
+
+- **Consolation Prize for Scientific Research Conference for Undergraduates 2024**  
+  Issued by Faculty of Information and Technology of University of Engineering and Technology - Vietnam National University
+
+- **First Prize for Scientific Research Conference for Undergraduates 2025 (Faculty Level)**  
+  Issued by Faculty of Information and Technology of University of Engineering and Technology - Vietnam National University
+
+- **Third Prize for Scientific Research Conference for Undergraduates 2025 (University Level)**  
+  Issued by University of Engineering and Technology - Vietnam National University
+
+## Skills
+
+### Technical Skills
+
+#### Programming
+
+- Language: Python, C++  
+- Framework: Deep Learning, Machine Learning, Math Modeling.
+
+### Soft Skills
+
+#### Language
+
+- English: IELTS 6.0  
+- Vietnamese: Native or bilingual proficiency
