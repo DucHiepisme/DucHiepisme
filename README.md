@@ -1,6 +1,5 @@
 # Trinh Duc Hiep
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/duchiepisme/)  
 Email: [duchiep1702forwork@gmail.com](mailto:duchiep1702forwork@gmail.com)  
 Mobile: [+84-886-222-003](tel:+84886222003)
 
