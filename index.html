@@ -39,9 +39,12 @@ a:hover{text-decoration:underline}
 header.nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 85%,transparent);
   backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:12px}
-.brand{font-weight:700;color:var(--text);letter-spacing:-.01em}
+.brand{flex:none;white-space:nowrap;font-weight:700;color:var(--text);letter-spacing:-.01em}
 nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;overflow-x:auto;scrollbar-width:none}
 nav ul::-webkit-scrollbar{display:none}
+header.nav nav{flex:1 1 auto; min-width:0}
+header.nav nav ul{justify-content:flex-start}
+@media (min-width:640px){header.nav nav ul{justify-content:center}}
 nav a{color:var(--muted);font-size:14px;white-space:nowrap}
 nav a:hover,nav a.active{color:var(--text);text-decoration:none}
 #theme{background:none;border:1px solid var(--line);color:var(--text);border-radius:999px;
@@ -83,6 +86,11 @@ p{margin:0 0 12px}
 .card h3{margin:0;font-size:17px;letter-spacing:-.01em}
 .card .when{font-size:13px;color:var(--muted)}
 .card p{color:var(--muted);font-size:15px;margin:8px 0 0}
+.media{margin:14px 0 0}
+.media img{display:block;width:100%;height:auto;border-radius:10px;border:1px solid var(--line);background:#fff}
+.media figcaption{margin-top:6px;font-size:12.5px;color:var(--muted)}
+.media + .media{margin-top:18px}
+.media img[width="416"]{max-width:520px}
 .card ul{margin:10px 0 0;padding-left:18px;color:var(--muted);font-size:15px}
 .card li{margin:3px 0}
 
@@ -148,30 +156,68 @@ footer{padding:36px 0 56px;border-top:1px solid var(--line);color:var(--muted);f
       <article class="card">
         <div class="top"><h3>Luggage damage classification · Singapore Airlines</h3><span class="when">2025 – present · MotionsCloud</span></div>
         <p>Working on an InternVL-based model that classifies damage on luggage, covering dataset curation, annotation, data augmentation and preprocessing.</p>
+        <figure class="media">
+          <picture>
+            <source media="(prefers-reduced-motion: reduce)" srcset="assets/gifs/luggage-crack-poster.png">
+            <img src="assets/gifs/luggage-crack.gif" width="760" height="508" loading="lazy" decoding="async"
+                 alt="A cracked suitcase being scanned; the model marks the crack and labels it as body damage">
+          </picture>
+          <figcaption>Illustrative demo: detecting a body crack on a suitcase.</figcaption>
+        </figure>
         <div class="tags"><span class="tag">InternVL</span><span class="tag">Computer Vision</span><span class="tag">Data curation</span><span class="tag">Docker</span></div>
       </article>
 
       <article class="card">
         <div class="top"><h3>Multimodal foul detection in football</h3><span class="when">Mar – Jul 2025</span></div>
         <p>A framework that fuses visual and temporal signals to spot foul situations, with a new data augmentation technique to handle class imbalance.</p>
+        <figure class="media">
+          <picture>
+            <source media="(prefers-reduced-motion: reduce)" srcset="assets/gifs/foul-detection-poster.jpg">
+            <img src="assets/gifs/foul-detection.gif" width="560" height="316" loading="lazy" decoding="async"
+                 alt="A football clip in which a defender grabs an attacker; the clip is marked as a foul situation">
+          </picture>
+          <figcaption>Example: a foul situation marked in a match clip.</figcaption>
+        </figure>
         <div class="tags"><span class="tag">Multimodal</span><span class="tag">Video</span><span class="tag">Class imbalance</span></div>
       </article>
 
       <article class="card">
         <div class="top"><h3>Football video summarization with language models</h3><span class="when">Dec 2023 – Mar 2025</span></div>
         <p>An automated pipeline that turns match footage into concise summaries using BERT and GPT, backed by a self-built database of the top five European leagues.</p>
+        <figure class="media">
+          <picture>
+            <source media="(prefers-reduced-motion: reduce)" srcset="assets/gifs/summarization-workflow-poster.png">
+            <img src="assets/gifs/summarization-workflow.gif" width="840" height="486" loading="lazy" decoding="async"
+                 alt="Video summarization overview, built up one component at a time: audio transformer, LLMs, frame extractor, frame classifier, audio extractor, audio analyzer, sports database and short generator, ending in a short summary">
+          </picture>
+          <figcaption>Video summarization overview: from a full match video to a short summary.</figcaption>
+        </figure>
+        <figure class="media">
+          <picture>
+            <source media="(prefers-reduced-motion: reduce)" srcset="assets/gifs/summarization-result-poster.jpg">
+            <img src="assets/gifs/summarization-result.gif" width="416" height="234" loading="lazy" decoding="async"
+                 alt="Highlights from a generated match summary: score cards with minute and scorer, build-up play, goal celebrations, fan reactions, a shot on goal and the final score">
+          </picture>
+          <figcaption>Result: highlights from a generated short summary (score cards, build-up, celebrations, fans, final score).</figcaption>
+        </figure>
         <div class="tags"><span class="tag">BERT</span><span class="tag">GPT</span><span class="tag">NLP + CV</span></div>
       </article>
 
       <article class="card">
         <div class="top"><h3>Legal textual entailment</h3><span class="when">Jul – Dec 2023</span></div>
         <p>Fine-tuned transformer models to decide entailment between complex legal texts, and co-authored a technical report with future research directions.</p>
+        <figure class="media">
+          <picture>
+            <source media="(prefers-reduced-motion: reduce)" srcset="assets/gifs/legal-entailment-poster.png">
+            <img src="assets/gifs/legal-entailment.gif" width="760" height="420" loading="lazy" decoding="async"
+                 alt="Schematic: a movie age-rating rule (premise) and a statement about a viewer (hypothesis) go into a transformer model, which outputs entailed or not entailed">
+          </picture>
+          <figcaption>Illustrative schematic of the entailment task, using a made-up movie age-rating rule.</figcaption>
+        </figure>
         <div class="tags"><span class="tag">NLP</span><span class="tag">Transformers</span><span class="tag">Legal informatics</span></div>
       </article>
 
     </div>
-    <!-- To add a figure to a card, put this just under the <h3> row:
-         <img src="assets/your-figure.png" alt="Describe the figure" style="width:100%;border-radius:8px;margin-top:12px"> -->
   </section>
 
   <section id="publications">
@@ -181,7 +227,10 @@ footer{padding:36px 0 56px;border-top:1px solid var(--line);color:var(--muted);f
       <h3>Towards An Efficient Multimodal Approach for Long Video Summarization</h3>
       <p class="authors">Trung-Hieu Cao*, <strong>Duc-Hiep Trinh*</strong>, Tran-Binh Dang, Duc-Trong Le, Phi-Diep Bui</p>
       <small>* equal contribution</small>
-      <!-- Add links when available: <div class="btns" style="margin-top:12px"><a class="btn" href="#">PDF</a><a class="btn" href="#">Code</a><a class="btn" href="#">BibTeX</a></div> -->
+      <div class="btns" style="margin-top:14px">
+        <a class="btn" href="https://ebook365.vn/ky-yeu-hoi-thao-quoc-gia-ve-tri-tue-nhan-tao-2026-proceedings-of-the-fisu-joint-conference-on-artificial-intelligence-2026-fjcai-2026-r1881.html" target="_blank" rel="noopener">Proceedings ↗</a>
+      </div>
+      <!-- More buttons when available: <a class="btn" href="#">PDF</a> <a class="btn" href="#">Code</a> <a class="btn" href="#">BibTeX</a> -->
     </div>
   </section>
 
